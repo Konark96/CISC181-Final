@@ -3,6 +3,8 @@ package rocket.app.view;
 import eNums.eAction;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import rocket.app.MainApp;
 import rocketCode.Action;
 import rocketData.LoanRequest;
@@ -11,18 +13,24 @@ public class MortgageController {
 
 	private MainApp mainApp;
 	
-	//	TODO - RocketClient.RocketMainController
+	//RocketClient.RocketMainController
 	
 	//	Create private instance variables for:
-	//		TextBox  - 	txtIncome
-	//		TextBox  - 	txtExpenses
-	//		TextBox  - 	txtCreditScore
-	//		TextBox  - 	txtHouseCost
-	//		ComboBox -	loan term... 15 year or 30 year
+	@FXML
+	private TextField  txtIncome;
+	@FXML
+	private TextField txtExpenses;
+	@FXML
+	private TextField	txtCreditScore;
+	@FXML
+	private TextField txtHouseCost;
+	private ComboBox loanTerm;
 	//		Labels   -  various labels for the controls
 	//		Button   -  button to calculate the loan payment
 	//		Label    -  to show error messages (exception throw, payment exception)
 
+	
+	
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 	}
