@@ -29,7 +29,7 @@ public class RateBLL {
 		}
 		//RocketBLL RateBLL.getRate
 		//			obviously this should be changed to return the determined rate
-		throw new RateException() ;
+		throw new RateException(rates.get(0)) ;
 		
 		
 	}
